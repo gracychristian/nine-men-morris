@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>9 Men's Morries</title>
+
+    <!-- 
+    6--------------7-------------0
+    |              |             |  
+    |      14-------15-----8     |
+    |      |       |       |     |
+    |      |  22--23--16   |     |  
+    |      |   |       |   |     |
+    |      |   |       |   |     |
+    5-----13--21      17---9-----1
+    |      |   |       |   |     |
+    |      |   |       |   |     |
+    |      |  20--19--18   |     |
+    |      |       |       |     |
+    |     12------11------10     |
+    |              |             |
+    4--------------3-------------2 -->
+
+</head>
+
+<body>
+    <h1>9 Men's Morries</h1>
+    <div id="turn-indicator">
+        Current player: X
+    </div>
+
+    <div class="outer-square">
+        <input type="button" class="boardCell boardCell first_input" maxlength="1" data-row="0" data-column="0"
+            value="">
+        <input type="button" class="boardCell second_input" data-row="0" data-column="3" value="">
+        <input type="button" class="boardCell third_input" data-row="0" data-column="6" value="">
+        <input type="button" class="boardCell v_middle_input" data-row="3" data-column="0" value="">
+        <input type="button" class="boardCell v_last_input" data-row="6" data-column="0" value="">
+        <input type="button" class="boardCell v_bottom_last_input" data-row="6" data-column="6" value="">
+        <input type="button" class="boardCell v_middle_last_input" data-row="6" data-column="3" value="">
+        <input type="button" class="boardCell v_middle_right_input" data-row="3" data-column="6" value="">
+        <div class="middle-square position-relative">
+            <input type="button" class="boardCell first_input" maxlength="1" data-row="1" data-column="1" value="">
+            <input type="button" class="boardCell second_input" data-row="1" data-column="3" value="">
+            <input type="button" class="boardCell third_input" data-row="1" data-column="5" value="">
+            <input type="button" class="boardCell v_middle_input" data-row="3" data-column="1" value="">
+            <input type="button" class="boardCell v_last_input" data-row="5" data-column="1" value="">
+            <input type="button" class="boardCell v_middle_last_input" data-row="5" data-column="3" value="">
+            <input type="button" class="boardCell v_bottom_last_input" data-row="5" data-column="5" value="">
+            <input type="button" class="boardCell v_middle_right_input" data-row="3" data-column="5" value="">
+            <div class="inner-square position-relative">
+                <input type="button" class="boardCell first_input" maxlength="1" data-row="2" data-column="2" value="">
+                <input type="button" class="boardCell second_input" data-row="2" data-column="3" value="">
+                <input type="button" class="boardCell third_input" data-row="2" data-column="4" value="">
+                <input type="button" class="boardCell v_middle_input" data-row="3" data-column="2" value="">
+                <input type="button" class="boardCell v_last_input" data-row="4" data-column="2" value="">
+                <input type="button" class="boardCell v_middle_last_input" data-row="4" data-column="3" value="">
+                <input type="button" class="boardCell v_bottom_last_input" data-row="4" data-column="4" value="">
+                <input type="button" class="boardCell v_middle_right_input" data-row="3" data-column="4" value="">
+            </div>
+        </div>
+    </div>
+    <div className="players">
+        <div id="player1"></div>
+        <div id="player2"></div>
+    </div>
+    <script src="script.js"></script>
+
+
+
+</body>
+
+</html>

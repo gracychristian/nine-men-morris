@@ -1,0 +1,185 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#turn-indicator {
+    font-size: x-large;
+}
+
+.players {
+    font-size: larger;
+}
+
+#player1 {
+    color: green;
+}
+
+#player2 {
+    color: red;
+}
+
+input {
+    cursor: pointer;
+}
+
+.outer-square {
+    justify-content: center;
+    width: 350px;
+    height: 350px;
+    position: relative;
+    padding: 40px;
+    z-index: 19;
+    border: 2px solid black;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.middle-square {
+    width: 250px;
+    position: absolute;
+    height: 250px;
+    padding: 40px;
+    border: 2px solid black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.inner-square {
+    width: 120px;
+    height: 120px;
+    padding: 40px;
+    border: 2px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.first_input {
+    position: absolute;
+    top: -1%;
+    left: -4px;
+    width: 20px;
+    padding: 0;
+}
+
+.second_input {
+    position: absolute;
+    top: -1%;
+    left: 50%;
+    width: 20px;
+    padding: 0;
+    transform: translateX(-50%);
+}
+
+.third_input {
+    position: absolute;
+    top: -1%;
+    right: -2px;
+    width: 20px;
+    padding: 0;
+}
+
+.v_middle_input {
+    position: absolute;
+    top: 50%;
+    left: -4px;
+    width: 20px;
+    padding: 0;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.v_middle_right_input {
+    position: absolute;
+    top: 50%;
+    right: -4px;
+    width: 20px;
+    padding: 0;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.v_last_input {
+    position: absolute;
+    bottom: -3px;
+    left: -4px;
+    width: 20px;
+    padding: 0;
+}
+
+.v_middle_last_input {
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    width: 20px;
+    padding: 0;
+    transform: translateX(-50%);
+}
+
+.v_bottom_last_input {
+    position: absolute;
+    bottom: -3px;
+    right: -14px;
+    width: 20px;
+    padding: 0;
+    transform: translateX(-50%);
+}
+
+.position-relative {
+    position: relative;
+}
+
+.inner-square {
+    position: relative;
+}
+
+.outer-square::before {
+    position: absolute;
+    content: "";
+    height: 27%;
+    width: 2px;
+    background: black;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.outer-square::after {
+    position: absolute;
+    content: "";
+    height: 27%;
+    width: 2px;
+    background: black;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.middle-square::before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 37%;
+    background: black;
+    top: 50%;
+    z-index: -2;
+    left: -15%;
+    transform: translateY(-50%);
+}
+
+.middle-square::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 37%;
+    background: black;
+    top: 50%;
+    z-index: -1;
+    right: -15%;
+    transform: translateY(-50%);
+}
